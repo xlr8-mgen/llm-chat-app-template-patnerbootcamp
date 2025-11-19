@@ -68,7 +68,7 @@ async function handleChatRequest(
     }
 
     const response = await env.AI.run(
-      MODEL_ID,
+      MODEL_ID = "@cf/meta/llama-3-8b-instruct"
       {
         messages,
         max_tokens: 1024,
